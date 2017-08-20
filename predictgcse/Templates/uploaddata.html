@@ -7,13 +7,44 @@
 <h2> GCSE grade Prediction App </h2>
 <h3> Please upload your data file </h3>
 
-<form action = "/getprediction" method="POST" enctype="multipart/form-data">
+<form action = "/upload.php" method="POST" enctype="multipart/form-data">
     Enter name of school:
     <input type="text" name="Name of school" id="schoolid">
 
     Upload file:
     <input type="file" name="fileToUpload" id="fileToUpload">
     <input type="submit" value="Upload File" name="submit">
+</form>
+    
+<h4> Select columns from your data for prediction </h4>
+<form action="upload.php" method="post" enctype="multipart/form-data">
+    <p> First Y11 reported grade:   
+    <select name="schoolid">
+        <option value="AM1">"$fieldname" </option>
+     </select>
+     
+     <p> First Y11 mock exam grade:   
+     <select name="$fieldName">
+        <option value="Mock 1">"$fieldName" </option>
+      </select>
+
+     <p> Second Y11 reported grade:   
+     <select name="$fieldName">
+	<option value="AM2">"$fieldName"</option>
+      </select>
+
+      <p> Third Y11 reported grade:   
+      <select name="$fieldName">
+	<option value="AM3">"$fieldName"</option>
+      </select>
+
+      <p> Second Y11 mock exam grade:   
+      <select name="$fieldName">
+	<option value="Mock 2">"$fieldName"</option>
+      </select>
+
+      <p> <input type ="submit" value="submit" /> </p>
+
 </form>
 
 </body>
